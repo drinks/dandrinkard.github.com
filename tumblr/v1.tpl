@@ -15,14 +15,18 @@
     <meta name="text:Google Analytics Account" content="" />
     <!-- /Theme Vars -->
     
+    {block:IfStylesheetURL}
     <link rel="stylesheet" href="{text:Stylesheet URL}" type="text/css" media="screen,projection" title="Primary Stylesheet" charset="utf-8" />
+    {/block:IfStylesheetURL}
     <style type="text/css">
     {CustomCSS}
     </style>
+    {block:IfJavascriptURL}
     <script src="http://www.google.com/jsapi"></script>
     <script>google.load("jquery", "1");</script>
-    <script src="{text:Javascript Plugins URL}" type="text/javascript" charset="utf-8"></script>
+    {block:IfJavascriptPluginsURL}<script src="{text:Javascript Plugins URL}" type="text/javascript" charset="utf-8"></script>{/block:IfJavascriptPluginsURL}
     <script src="{text:Javascript URL}" type="text/javascript" charset="utf-8"></script>
+    {/block:IfJavascriptURL}
 
   </head>
   <body>
