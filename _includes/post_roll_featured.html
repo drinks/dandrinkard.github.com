@@ -1,6 +1,7 @@
+{% assign content_length = {{ post.content | number_of_words }} %}
 <div class="post featured" id="post_{{ post.id }}">
-  <h2>{{ post.title }}</h2>
-  <p class="meta"></p>
-  <p></p>
-  <p class="post-footer"></p>
+  <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+  <p class="meta"><span class="timestamp">{{ post.date | date_to_string }}</span> • <span class="comment-count">0 comments</span></p>
+  <p>{{ post.content | truncatewords:'{{site.excerpts}}' }}</p>
+  <p class="post-footer"><a href="{{ post.permalink }}">{% if {{ content_length }} > {{ site.excerpts }} %}Continue reading &raquo;{% else %}Permalink{% endif %}</a></p>
 </div>

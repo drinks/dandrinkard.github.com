@@ -2,9 +2,11 @@
 permalink: pretty
 pygments: true
 markdown: rdiscount
-pagination: 10
 
 # Site config
 title: Too Much Recursion
-name: toomuchrecursion.com
+name: Too Much Recursion
+url: http://toomuchrecursion.com
 theme: default
+pagination: 10
+excerpt: 50
