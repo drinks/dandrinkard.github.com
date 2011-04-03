@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="/media/css/screen.css" charset="utf-8">
-    <title>{{ title }} • {{ site.title }}</title>
-    {% include head.html %}
-  </head>
-  <body>
-    <div id="header">
-      {% include header.html %}
-    </div>
-    
-    <div id="navigation">
-      {% include navigation.html %}
-    </div>
-    
-    <div class="container">
-      {% include flash.html %}
-      <div id="content">
-        {{ content }}
-        {% include comments.html %}
-      </div>
-      <div id="sidebar">
-        {% include sidebar.html %}
-      </div>
-    </div>
-    <div id="footer">
-      {% include footer.html %}
-    </div>
-  </body>
-</html>
+---
+layout: default
+---
+{{ content }}
+{% include comments.html %}
+{% include related_posts.html %}
