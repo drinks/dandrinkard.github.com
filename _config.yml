@@ -9,4 +9,4 @@ name: Too Much Recursion
 url: http://toomuchrecursion.com
 theme: default
 pagination: 10
-excerpt: 50
+excerpt_length: 50
