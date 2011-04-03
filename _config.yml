@@ -6,6 +6,7 @@ markdown: rdiscount
 # Site config
 title: Too Much Recursion
 name: Too Much Recursion
+shortname: toomuchrecursion
 url: http://toomuchrecursion.com
 author: Dan Drinkard
 author_email: dan.drinkard@gmail.com
