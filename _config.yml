@@ -11,5 +11,5 @@ url: http://toomuchrecursion.com
 author: Dan Drinkard
 author_email: dan.drinkard@gmail.com
 theme: default
-pagination: 10
-excerpt_length: 50
+paginate: 10
+excerpt_words: 20

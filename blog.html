@@ -2,12 +2,18 @@
 layout: default
 title: Blog
 ---
+{% if paginator.page != 1 %}
+{% include pagination/prev_next.html %}
+{% endif %}
+
 <div id="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     {% if forloop.first %}
-      {% include post_roll_featured.html %}
+      {% include post_roll/featured.html %}
     {% else %}
-      {% include post_roll_normal.html %}
+      {% include post_roll/normal.html %}
     {% endif %}
   {% endfor %}
 </div>
+
+{% include pagination/sliding.html %}
