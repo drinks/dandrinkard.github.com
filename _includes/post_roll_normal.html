@@ -5,5 +5,5 @@
   <p>{{ post.content | truncatewords:excerpt_length }}</p>
   <p class="post-footer"><span class="meta"><span class="timestamp">{{ post.date | date_to_string }}</span> • 
     <span class="comment-count">0 comments</span></span> • 
-    <a href="{{ post.url }}">{% if content_length > excerpt_length %}Continue reading &raquo;{% else %}Permalink{% endif %}</a></p>
+    <a href="{{ post.url }}">{% if post.content|number_of_words > site.excerpt_length %}Continue reading &raquo;{% else %}Permalink{% endif %}</a></p>
 </div>
