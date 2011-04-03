@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="/media/css/screen.css" charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        {% include header.html %}
+      </div>
+      
+      <div id="navigation">
+        {% include navigation.html %}
+      </div>
+      
+      <div class=="container">
+        <div id="content">
+          {{ content }}
+        </div>
+        <div id="sidebar">
+          {% include sidebar.html %}
+        </div>
+      </div>
+      <div id="footer">
+        {% include footer.html %}
+      </div>
+    </div>
+  </body>
+</html>
