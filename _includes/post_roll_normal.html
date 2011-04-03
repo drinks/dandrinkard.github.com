@@ -1,4 +1,6 @@
 {% assign content_length = post.content | number_of_words %}
+cl: {{ content_length }}
+se: {{ site.excerpts }}
 <div class="post" id="post_{{ post.id }}">
   <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
   <p>{{ post.content | truncatewords:site.excerpts }}</p>
