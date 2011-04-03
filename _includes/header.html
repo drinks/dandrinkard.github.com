@@ -1,0 +1,10 @@
+<div class="container">
+  <div id="logo">
+  {% if is_home %}
+    <h1 id="site_name"><a href="{{ site.url }}">{{ site.title }}</a></h1>
+    {% else %}
+    <div id="site_name"><a href="{{ site.url }}">{{ site.title }}</a>
+  {% endif %}
+  <p id="site_description">{{ site.description }}</p>
+  </div>
+</div>

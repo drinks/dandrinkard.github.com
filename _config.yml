@@ -7,6 +7,7 @@ markdown: rdiscount
 title: Too Much Recursion
 name: Too Much Recursion
 shortname: toomuchrecursion
+description: 'Brought to you by Dan Drinkard, a hackintosh, and lots of coffee.'
 url: http://toomuchrecursion.com
 author: Dan Drinkard
 author_email: dan.drinkard@gmail.com
