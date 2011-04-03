@@ -1,4 +1,10 @@
-theme: plain
+# System config
+permalink: pretty
+pygments: true
+markdown: rdiscount
+pagination: 10
+
+# Site config
 title: Too Much Recursion
 name: toomuchrecursion.com
-header_color: FF6633
+theme: default

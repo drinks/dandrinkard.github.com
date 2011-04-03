@@ -1,0 +1,13 @@
+---
+layout: default
+title: Blog
+---
+<div id="posts">
+  {% for post in site.posts %}
+    {% if forloop.first %}
+      {% include post_roll_featured.html %}
+    {% else %}
+      {% include post_roll_normal.html %}
+    {% endif %}
+  {% endfor %}
+</div>
